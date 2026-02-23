@@ -92,12 +92,10 @@ function App() {
 
       });
 
-      const res=await fetch("http://127.0.0.1:8000/predict",{
-
-        method:"POST",
-        headers:{"Content-Type":"application/json"},
-        body:JSON.stringify(numericInputs)
-
+      const res = await fetch("https://ucs-backend-gullmaryam00.repl.co/predict", {
+        method: "POST",
+        headers: {"Content-Type":"application/json"},
+        body: JSON.stringify(numericInputs)
       });
 
       const data=await res.json();
