@@ -73,7 +73,7 @@ function App() {
 
       // ✅ Call Replit backend
       const res = await fetch(
-        "https://ucs-backend-gullmaryam00.repl.co/predict",
+        "https://ucs-backend--gullmaryam00.replit.app/predict",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
